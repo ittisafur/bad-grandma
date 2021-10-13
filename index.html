@@ -4,282 +4,167 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="assets/css/styles.css" rel="stylesheet" />
-    <title>NFT - Project</title>
-
+    <title>Bad Grandma</title>
     <script
       defer
       src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
   </head>
-  <body>
-    <header class="wrapper">
-      <nav
-        class="
-          lg:flex
-          md:flex
-          lg:justify-between
-          md:justify-between
-          space-y-4
-          lg:space-y-0
-          md:space-y-0
-        "
-      >
-        <div class="text-center">
-          <h1 class="font-rajdhani text-3xl font-bold uppercase text-primary">
-            NFT TRADER WORLD
-          </h1>
-          <p class="font-rajdhani font-medium text-secondary">
-            The first HPP project on ImmutableX.
-          </p>
+  <body class="bg-primaryBg">
+    <!-- header start -->
+    <header class="wrapper space">
+      <nav class="sm:flex justify-between">
+        <div>
+          <a href="#">
+            <img src="/assets/images/logo.png" alt="Logo" />
+          </a>
         </div>
-        <div class="flex justify-between space-x-6">
-          <img
-            src="/assets/images/header-discord.png"
-            alt="discord"
-            class="flex-none self-center"
-          />
-          <img
-            src="assets/images/header-twitter.png"
-            alt="twitter"
-            class="flex-none self-center"
-          />
-          <button
-            type="submit"
+        <div class="sm:flex sm:space-x-4 items-center">
+          <div
             class="
-              p-4
-              lg:px-6 lg:py-3
-              md:px-6 md:py-3
-              default-gradient
-              rounded-full
-              lg:text-4xl
-              md:text-4xl
-              text-center
+              flex
+              items-center
+              lg:space-x-4
+              space-x-3
+              my-4
+              sm:my-0
+              justify-center
             "
           >
-            Connect Wallet
-          </button>
+            <a href="#"
+              ><img
+                src="/assets/images/token-trove.png"
+                alt="Token Trove"
+                class="h-7 lg:h-auto"
+            /></a>
+            <a href="#"
+              ><img
+                src="/assets/images/something.png"
+                alt=""
+                class="h-7 lg:h-auto"
+            /></a>
+            <a href="#"
+              ><img
+                src="/assets/images/discord.png"
+                alt="Discord"
+                class="h-7 lg:h-auto"
+            /></a>
+            <a href="#"
+              ><img
+                src="/assets/images/twitter.png"
+                alt="Twitter"
+                class="h-7 lg:h-auto"
+            /></a>
+          </div>
+          <div class="text-center sm:text-left">
+            <button
+              class="
+                font-bold
+                lg:text-40
+                md:text-2xl
+                default-gradient
+                lg:py-4
+                px-8
+                py-2
+                text-white
+                rounded-lg
+                text-2xl
+              "
+            >
+              Connect Wallet
+            </button>
+          </div>
         </div>
       </nav>
     </header>
-    <!-- Header End -->
+    <!-- header end -->
+
     <!-- banner start -->
-    <div class="relative bg-banner bg-center bg-cover bg-no-repeat">
-      <div
+    <div class="bg-banner bg-cover bg-no-repeat bg-center h-screen"></div>
+    <!-- banner end -->
+
+    <!-- welcome wagmi -->
+    <div class="wrapper space">
+      <h1
         class="
-          banner
-          wrapper
-          text-center
-          lg:pt-32
-          md:pt-24
-          pt-2
-          lg:px-48
-          md:px-40
-          px-0
-          space-y-5
+          text-primaryText
+          sm:text-80
+          text-5xl
+          mb-4
+          sm:mb-0
+          uppercase
+          font-bold
         "
       >
-        <h1 class="text-5xl font-bold text-white">
-          F**K IT. LETS GO TO THE MOON. WELCOME EARLY ADOPTERS
-        </h1>
-        <p class="text-xl text-white">
-          If you’re reading this, you are earlier to NFTs than 99% of the world.
-          Be proud.
-        </p>
-        <div class="aspect-w-16 aspect-h-9">
-          <iframe
-            src="https://www.youtube.com/embed/uNGmyQ8UbZ8"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <h3 class="text-3xl text-white pb-3">Minting: October 2021</h3>
-      </div>
-    </div>
-    <!-- banner end -->
-    <!-- price start -->
-    <div class="price border-b border-borderBot">
-      <div class="wrapper text-center space-y-5" x-data="handleCollection()">
-        <p class="text-5xl text-tertiary">
-          Price : 0.07 ETH &amp ZERO GAS FEES
-        </p>
+        Welcome &amp; wagmi
+      </h1>
 
-        <p class="text-3xl uppercase text-left">
-          <span x-text="collection"></span> collectibles
-        </p>
-        <div
-          class="
-            md:flex
-            lg:flex
-            flex-none
-            justify-between
-            space-y-5
-            lg:space-y-0
-            md:space-y-0
-            sm:space-y-0
-          "
-        >
-          <input
-            type="range"
-            name=""
-            value=""
-            x-model="collection"
-            min="0"
-            max="10"
-            value="0"
-          />
-          <button
-            type="submit"
-            @click="handleSubmit"
-            class="
-              flex-none
-              default-gradient
-              text-4xl
-              rounded-full
-              px-24
-              py-2
-              uppercase
-            "
+      <h3
+        class="
+          left-4
+          uppercase
+          story
+          relative
+          text-2xl text-secondaryText
+          font-bold
+          mb-9
+        "
+      >
+        story
+      </h3>
+      <div class="grid sm:grid-cols-2 sm:gap-14">
+        <div class="">
+          <p class="leading-8 text-white">
+            Bad Grandma broke out of her retirement home. It started off
+            innocent, she just wanted a few limes. But limes lead to tequila
+            shots and tequila shots lead to bad decisions. With those bad
+            decisions comes some bad friends, and Bad Grandma made a lot of
+            them. The friends you make taking tequila shots are not the crowd
+            she rolled with at the retirement home.
+          </p>
+          <p class="leading-8 text-white mt-9">
+            Bad Grandma’s new friends couldn’t relate when my she talked about
+            hard candies, sewing, and hemorrhoid cream. They didn’t understand
+            her constant complaints about her knees and hip. But they did
+            understand her love for riding scooters around Walmart. Even young
+            people love to ride scooters in a crowded Walmart. But when Walmart
+            got in trouble for being reckless she got pissed off. She spotted
+            the ‘wet floor’ sign and decided to make some money.
+          </p>
+        </div>
+        <div class="text-white leading-8">
+          <p class="mt-9 sm:mt-0">
+            Bad Grandma got a lot of money, but she wanted more. She went online
+            and bought some Ethereum when it was $12.
+          </p>
+          <blockquote
+            class="quote relative text-2xl leading-9 px-4 mt-6"
+            cite=""
           >
-            Mint
-          </button>
+            Now Bad Grandma is a <strong>millionaire</strong>. With all her
+            money she bought a <strong> lime green Lambo</strong> to drive back
+            to the retirement home. At least, that was her plan, but we all know
+            what limes lead to…..
+          </blockquote>
         </div>
       </div>
     </div>
-    <!-- price end -->
-    <!-- collection start -->
-    <div class="collection my-10">
+    <!-- welcome wagmi end -->
+
+    <div class="bg-secondaryBg">
       <div class="wrapper">
-        <h1
-          class="
-            mb-4
-            text-center
-            sm:text-7xl
-            text-5xl
-            uppercase
-            font-rajdhani font-bold
-          "
-        >
-          The Collection Sneak Peek
-        </h1>
-        <div class="max-w-5xl mx-auto">
-          <img src="/assets/images/collection.png" alt="" />
-        </div>
-      </div>
-    </div>
-    <!-- collection end -->
-    <!-- mint start -->
-    <div class="wrapper mint">
-      <h1 class="text-7xl font-rajdhani font-bold text-center">HOW TO MINT?</h1>
-
-      <div class="flex space-x-3">
-        <img src="/assets/images/mint-1.png" alt="Mint 1" />
-        <div class="flex flex-col justify-center">
-          <div class="flex">
-            <span class="font-bold text-5xl">01</span>
-            <span
-              class="self-end w-3 h-3 bg-mintDot rounded-full flex items-end"
-            ></span>
-          </div>
-          <p class="text-2xl font-bold">Connect your Metamask Wallet</p>
-        </div>
-      </div>
-    </div>
-    <!-- mint end -->
-    <!-- rant start -->
-    <div class="bg-bgColor">
-      <div class="wrapper space-y-10">
-        <!-- rant inner first -->
-        <div class="flex">
-          <div class="w-6/12 text-center px-24 py-16 bg-bgColorSecondary">
-            <h1 class="uppercase font-rajdhani font-bold text-8xl text-white">
-              our rant
-            </h1>
-            <p class="text-4xl font-rajdhani text-white">
-              This is a collection of 11,111 Header Profile Pictures (HPPs) with
-              98 hand drawn interchangeable layers.
-            </p>
-          </div>
-          <div class="w-6/12 self-end px-12 py-4">
-            <p class="text-xl text-rantPara">
-              We poured our guts out as artist, developer, and blockchain
-              enthusiasts who love the NFT community. You have changed our lives
-              and we want to provide homage, tribute, and respect to the
-              community by making this art collection. This collection lives on
-              Immutable, a Layer 2 solution on the Ethereum blockchain.
+        <div class="px-7 py-4">
+          <div>
+            <button class="">Mint</button>
+            <p class="uppercase">
+              <label for="bad-grandma"> 1 Bad Grandma(s) </label>
+              <progress id="bad-grandma" value="32" max="100"></progress>
             </p>
           </div>
         </div>
-        <!-- rant inner first end -->
-        <!-- rant inner second start -->
-        <div class="text-center space-y-4">
-          <div class="flex w-10/12 mx-auto justify-center">
-            <h1 class="uppercase text-5xl text-white mr-3">
-              The First Hpp collection on
-            </h1>
-            <img src="/assets/images/logo.png" alt="ImmutableX Logo" />
-          </div>
-
-          <h3 class="text-4xl">
-            Use your regular MetaMask wallet + ETH
-            <span class="font-semibold text-rantGasFees uppercase">
-              with NO GAS FEES.</span
-            >
-          </h3>
-          <p class="text-rantLastPara text-lg">
-            Being early in an industry like this has its perks but also its
-            challenges. Alot of us are young, ambitious, obsessive, emotional,
-            and optimistic…what I am getting at is this is a f**cking
-            rollercoaster. We sit in front of our screens from morning until
-            night. Our friends, our parents, the outside world, they ridicule
-            us. We miss out on things in the outside world so we don’t miss
-            things on twitter. Then when we do connect with the outside world we
-            ending up missing a cool drop we should have aped into or a free
-            mint. We try and operate under the principal of work hard now, grind
-            it out, so we can be free later.
-          </p>
-          <p class="text-white text-2xl">
-            Does our non perfect grammar and rambling vibe with you? If so, we
-            created this collection for you!
-          </p>
-        </div>
-        <!-- rant inner second end -->
       </div>
     </div>
-    <!-- rant end -->
-    <!-- artist start -->
-    <div class="artist border-b border-borderBot">
-      <div class="wrapper flex">
-        <div class="w-6/12">
-          <h2 class="text-7xl">FROM THE ARTIST</h2>
-          <p>
-            I created this art to showcase the emotional rollercoaster of being
-            in my bedroom surrounded by screens, learning, stressing, keeping
-            up, and trying to make the correct decisions on what NFT to mint,
-            what to trade and when, and if should I HODL my Lazy Lion. Haha. I’m
-            just a young guy who loves this space and wanted to honor all of my
-            fellow NFT traders, collectors, and overall one of the coolest
-            communities I have ever been a part of.
-          </p>
-          <h4>Thanks, for being so welcoming and cool.</h4>
-        </div>
-        <div class="w-6/12">
-          <img
-            src="/assets/images/artist-1.png"
-            alt="artist-1 "
-            class="mx-auto"
-          />
 
-          <img
-            src="/assets/images/artist-2.png"
-            alt="artist-2"
-            class="mx-auto"
-          />
-        </div>
-      </div>
-    </div>
-    <!-- artist end-->
     <script>
       function handleCollection() {
         function handleSubmit(e) {

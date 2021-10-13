@@ -1,32 +1,27 @@
 module.exports = {
-  mode: "jit",
-  purge: ["./src/**/*.css", "./**/*.html"],
+  // mode: "jit",
+  // purge: ["./src/**/*.css", "./**/*.html"],
+  purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
-        primary: "#040404",
-        secondary: "#2b2b2b",
-        tertiary: "#1c1c1c",
-        mintDot: "#dbb9c3",
-        rantPara: "#fefefe",
-        rantGasFees: "#95d0f7",
-        rantLastPara: "#b4bff1",
-        bgColor: "#323e72",
-        bgColorSecondary: "#6a2861",
-        borderBot: "#a7a6a6",
+        primaryBg: "#505050",
+        secondaryBg: "#ffe45e",
+        primaryText: "#ff6392",
+        secondaryText: "#af9c70",
       },
-      fontFamily: {
-        rajdhani: ["Rajdhani", "sans-serif"],
+      fontSize: {
+        40: "2.5rem",
+        80: "5rem",
       },
       backgroundImage: {
-        banner: "url('/assets/images/cover.png')",
-        collection: "url('/assets/images/collection.png')",
+        banner: "url('/assets/images/banner.png')",
       },
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [require("@tailwindcss/aspect-ratio")],
+  plugins: [],
 };

@@ -14,7 +14,7 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-postcss": "^9.0.0",
     "postcss": "^8.2.6",
-    "tailwindcss": "^2.0.3"
+    "tailwindcss": "^2.2.15"
   },
   "dependencies": {
     "@tailwindcss/aspect-ratio": "^0.3.0"
