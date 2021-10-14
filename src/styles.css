@@ -30,6 +30,15 @@
   .space {
     @apply my-9;
   }
+  .roadmap__lists li::before {
+    content: " ";
+    background: #feeb8b;
+    border-radius: 100px;
+    padding-inline: 1ch;
+    margin-inline-end: 1ch;
+    width: 15px;
+    height: 15px;
+  }
   .story::before {
     content: "";
     background-color: #a5f056;
@@ -80,6 +89,8 @@
     left: -17px;
     display: inline-block;
     top: 0;
+  }
+  @media (min-width: 640px) {
   }
 }
 progress.mint-progress[value] {
