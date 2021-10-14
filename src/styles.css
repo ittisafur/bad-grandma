@@ -36,6 +36,27 @@
     display: inline-block;
     top: 5px;
   }
+
+  .why_mint__border::before {
+    content: "";
+    background-color: #a3ee54;
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: -17px;
+    top: 0;
+    display: inline-block;
+  }
+  .giveaway::before {
+    content: "";
+    background-color: #a3ee54;
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: -17px;
+    top: 0;
+    display: inline-block;
+  }
   .quote::before {
     content: "";
     background-color: #ff6392;
@@ -43,6 +64,16 @@
     height: 100%;
     position: absolute;
     left: -8px;
+    display: inline-block;
+    top: 0;
+  }
+  .team__before::before {
+    content: "";
+    background-color: #ff6392;
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: -17px;
     display: inline-block;
     top: 0;
   }
