@@ -9,6 +9,7 @@ module.exports = {
         primaryBg: "#505050",
         secondaryBg: "#ffe45e",
         tertiaryBg: "#363636",
+        quaternaryBg: "#5aa9e6",
         primaryText: "#ff6392",
         secondaryText: "#af9c70",
         tertiaryText: "#feb33a",

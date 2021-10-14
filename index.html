@@ -107,12 +107,12 @@
           relative
           text-2xl text-secondaryText
           font-bold
-          mb-9
+          my-9
         "
       >
         story
       </h3>
-      <div class="grid sm:grid-cols-2 sm:gap-14">
+      <div class="grid sm:grid-cols-2 sm:gap-14 md:pb-24 pb-10">
         <div class="">
           <p class="leading-8 text-white">
             Bad Grandma broke out of her retirement home. It started off
@@ -153,7 +153,7 @@
     <!-- mint section -->
     <div class="bg-secondaryBg mint_section py-28">
       <div class="wrapper">
-        <div class="grid md:grid-cols-2 grid-cols-1 md:gap-24">
+        <div class="grid md:grid-cols-2 grid-cols-1 lg:gap-24 md:gap-10">
           <div class="px-7 py-4 mint-background pt-11" x-data="mintProgress()">
             <div class="bg-tertiaryBg rounded-xl overflow-hidden">
               <button
@@ -177,8 +177,8 @@
                 for="bad-grandma"
                 class="
                   block
-                  sm:text-40
-                  text-3xl text-white
+                  lg:text-40
+                  text-2xl text-white
                   uppercase
                   text-center
                   font-bold
@@ -274,6 +274,54 @@
       </div>
     </div>
     <!-- mint section end -->
+    <!-- rarity section -->
+
+    <div class="bg-quaternaryBg">
+      <div class="wrapper text-white pt-28">
+        <h1 class="md:text-90 text-5xl uppercase font-bold sm:pb-16 pb-8">
+          rarity
+        </h1>
+        <p class="text-2xl">
+          We created
+          <strong> Bad Grandma with 14 traits and 129 attributes.</strong>
+        </p>
+        <p class="text-lg mt-4 mb-12">
+          Some are rarer than others like hoodies, witch shirt, devil horns,
+          leather jacket, leopard shirt, crown, holy halo, ether necklace, demon
+          eyes, chameleon, monkey, and the bikini are just some of the rarest
+          items in the collection.
+        </p>
+        <div
+          class="grid sm:grid-cols-4 sm:gap-6 sm:pb-28 grid-cols-1 pb-7 gap-8"
+        >
+          <img src="/assets/images/gramma-1.png" alt=" ${2} " class="w-full" />
+          <img src="/assets/images/grandma-2.png" alt=" ${4} " class="w-full" />
+          <img src="/assets/images/grandma-3.png" alt=" ${6} " class="w-full" />
+          <img src="/assets/images/grandma-4.png" alt=" ${8} " class="w-full" />
+          <img
+            src="/assets/images/grandma-5.png"
+            alt=" ${10} "
+            class="w-full"
+          />
+          <img
+            src="/assets/images/grandma-6.png"
+            alt=" ${12} "
+            class="w-full"
+          />
+          <img
+            src="/assets/images/grandma-7.png"
+            alt=" ${14} "
+            class="w-full"
+          />
+          <img
+            src="/assets/images/grandma-8.png"
+            alt=" ${16} "
+            class="w-full"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- rarity section end -->
 
     <script>
       function mintProgress() {
