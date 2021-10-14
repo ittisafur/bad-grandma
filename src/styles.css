@@ -15,6 +15,10 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15),
       inset 0 2px 0 rgba(255, 255, 255, 0.35);
   }
+  .secondary-gradient {
+    background-color: #ff6392;
+    box-shadow: 0 9px 0 rgba(0, 0, 0, 0.26);
+  }
   .mint-button {
     box-shadow: 0 9px 0 rgba(0, 0, 0, 0.26);
   }
