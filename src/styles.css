@@ -90,7 +90,14 @@
     display: inline-block;
     top: 0;
   }
-  @media (min-width: 640px) {
+  @media (max-width: 640px) {
+    .roadmap-2 {
+      @apply absolute w-1/4;
+    }
+  }
+  @media (max-width: 320px) {
+    .roadmap-2 {
+    }
   }
 }
 progress.mint-progress[value] {
@@ -107,7 +114,13 @@ progress.mint-progress {
 progress.mint-progress[value]::-webkit-progress-bar {
   background-color: #565555;
 }
+progress.mint-progress[value]::-moz-progress-bar {
+  background-color: #565555;
+}
 
 progress.mint-progress[value]::-webkit-progress-value {
+  background-color: #ff6392;
+}
+progress.mint-progress[value]::-moz-progress-value {
   background-color: #ff6392;
 }
