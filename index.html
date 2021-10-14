@@ -150,32 +150,138 @@
       </div>
     </div>
     <!-- welcome wagmi end -->
-
-    <div class="bg-secondaryBg">
+    <!-- mint section -->
+    <div class="bg-secondaryBg mint_section py-28">
       <div class="wrapper">
-        <div class="px-7 py-4">
+        <div class="grid md:grid-cols-2 grid-cols-1 md:gap-24">
+          <div class="px-7 py-4 mint-background pt-11" x-data="mintProgress()">
+            <div class="bg-tertiaryBg rounded-xl overflow-hidden">
+              <button
+                class="
+                  py-4
+                  rounded-xl
+                  bg-primaryText
+                  text-6xl
+                  font-bold
+                  block
+                  w-full
+                  mint-button
+                  overflow-hidden
+                  text-tertiaryBg
+                "
+                @click="submit"
+              >
+                Mint
+              </button>
+              <label
+                for="bad-grandma"
+                class="
+                  block
+                  sm:text-40
+                  text-3xl text-white
+                  uppercase
+                  text-center
+                  font-bold
+                  py-10
+                "
+              >
+                <span x-text="progress"></span> Bad Grandma(s)
+              </label>
+              <div
+                class="
+                  flex
+                  items-center
+                  justify-center
+                  pb-10
+                  sm:px-12
+                  px-4
+                  space-x-4
+                "
+              >
+                <progress
+                  class="mint-progress"
+                  id="bad-grandma"
+                  max="100"
+                  x-model="progress"
+                ></progress>
+
+                <button @click="progress--">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 fill-current text-secondaryBg"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+                <button @click="progress++">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 fill-current text-secondaryBg"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <p class="text-90 text-center font-bold">
+              <span class="text-tertiaryBg">290</span>
+              <span class="text-tertiaryText">/</span>
+              <span class="text-white">9,999</span>
+            </p>
+          </div>
+
           <div>
-            <button class="">Mint</button>
-            <p class="uppercase">
-              <label for="bad-grandma"> 1 Bad Grandma(s) </label>
-              <progress id="bad-grandma" value="32" max="100"></progress>
+            <h2
+              class="
+                xl:text-90
+                text-5xl
+                lg:pb-20
+                py-4
+                sm:py-0
+                text-tertiaryBg
+                font-bold
+                uppercase
+              "
+            >
+              THE COLLECTION
+            </h2>
+            <p class="text-2xl">
+              Bad Grandma is a
+              <strong>
+                collection of 10,000 randomly generated & unique
+                collectibles</strong
+              >
+              carefully chosen by some of the greatest grandsons who love their
+              grandmas.
+            </p>
+            <p class="text-lg p-4">
+              This project is inspired to showcase that even though our
+              grandmothers are older; they are still bad to the bone and cool.
             </p>
           </div>
         </div>
       </div>
     </div>
+    <!-- mint section end -->
 
     <script>
-      function handleCollection() {
-        function handleSubmit(e) {
-          e.preventDefault();
-          // Send request to servie via axios or fetch
-          console.log(this.collection);
-          return this.collection;
-        }
+      function mintProgress() {
         return {
-          collection: 0,
-          handleSubmit,
+          progress: 0,
+          submit: function () {
+            console.log(this.progress);
+          },
         };
       }
     </script>
