@@ -184,6 +184,11 @@
       font-size: 8px;
     }
   }
+  @media (min-width: 320px) and (max-width: 768px) {
+    .footer__a::after {
+      display: none;
+    }
+  }
 }
 progress.mint-progress[value] {
   height: 9px;
