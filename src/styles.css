@@ -5,7 +5,7 @@
 @layer components {
   .wrapper {
     max-width: 1375px;
-    @apply container mx-auto px-4;
+    @apply container mx-auto px-2;
   }
   .default-gradient {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15),
@@ -98,16 +98,28 @@
     background-color: #02182a;
     width: 2px;
     height: 100%;
-
     position: absolute;
     right: -8px;
     display: inline-block;
     top: 0;
   }
+  @media (max-width: 375px) {
+    .wrapper {
+      padding: 0;
+    }
+  }
+  @media (max-width: 425px) {
+  }
+  @media (max-width: 320px) {
+    .wrapper {
+      @apply px-4;
+    }
+  }
+
   @media screen and (min-device-width: 320px) and (max-device-width: 600px) {
     .roadmap-1 {
       right: -2px;
-      top: 20px;
+      top: 50px;
       width: 35% !important;
     }
 
@@ -120,8 +132,88 @@
     }
     .roadmap-2 {
       left: 0rem;
-      top: 100px;
+      top: 107px;
+      width: 32% !important;
+    }
+    .roadmap-2 h2 {
+      font-size: 15px;
+    }
+    .roadmap-2 ul li {
+      font-size: 8px;
+      padding: 0;
+    }
+
+    .roadmap-3 {
+      right: 0px;
+      top: 212px;
       width: 35% !important;
+    }
+    .roadmap-3 h2 {
+      font-size: 16px;
+    }
+    .roadmap-3 ul li {
+      font-size: 8px;
+    }
+  }
+
+  @media screen and (min-device-width: 321px) and (max-device-width: 424px) {
+    .roadmap-3 {
+      right: 0px;
+      top: 220px !important;
+      width: 35% !important;
+    }
+  }
+  @media screen and (min-device-width: 425px) and (max-device-width: 600px) {
+    .roadmap-1 h2 {
+      font-size: 16px;
+    }
+    .roadmap-1 ul li {
+      font-size: 8px;
+      padding: 0;
+    }
+    .roadmap-2 {
+      left: 0rem;
+      top: 140px;
+      width: 30% !important;
+    }
+    .roadmap-2 h2 {
+      font-size: 16px;
+    }
+    .roadmap-2 ul li {
+      font-size: 8px;
+      padding: 0;
+    }
+
+    .roadmap-3 {
+      right: 0px;
+      top: 205px !important;
+      width: 35% !important;
+    }
+    .roadmap-3 h2 {
+      font-size: 16px;
+    }
+    .roadmap-3 ul li {
+      font-size: 8px;
+    }
+  }
+  @media screen and (min-device-width: 601px) and (max-device-width: 639px) {
+    .roadmap-1 {
+      right: -2px;
+      top: 55px;
+      width: 35% !important;
+    }
+
+    .roadmap-1 h2 {
+      font-size: 16px;
+    }
+    .roadmap-1 ul li {
+      font-size: 8px;
+      padding: 0;
+    }
+    .roadmap-2 {
+      left: 0rem;
+      top: 137px;
+      width: 34% !important;
     }
     .roadmap-2 h2 {
       font-size: 15px;
@@ -143,50 +235,12 @@
       font-size: 8px;
     }
   }
-
-  @media screen and (min-device-width: 425px) and (max-device-width: 600px) {
-    .roadmap-1 {
-      right: -2px;
-      top: 20px;
-      width: 35% !important;
-    }
-
-    .roadmap-1 h2 {
-      font-size: 16px;
-    }
-    .roadmap-1 ul li {
-      font-size: 8px;
-      padding: 0;
-    }
-    .roadmap-2 {
-      left: 0rem;
-      top: 130px;
-      width: 30% !important;
-    }
-    .roadmap-2 h2 {
-      font-size: 16px;
-    }
-    .roadmap-2 ul li {
-      font-size: 8px;
-      padding: 0;
-    }
-
-    .roadmap-3 {
-      right: -5px;
-      top: 185px !important;
-      width: 35% !important;
-      top: 162px;
-    }
-    .roadmap-3 h2 {
-      font-size: 16px;
-    }
-    .roadmap-3 ul li {
-      font-size: 8px;
-    }
-  }
   @media (min-width: 320px) and (max-width: 768px) {
     .footer__a::after {
       display: none;
+    }
+    .mint__counts {
+      @apply text-4xl !important pt-7;
     }
   }
 }
