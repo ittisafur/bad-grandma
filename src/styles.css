@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+}
 @layer components {
   .wrapper {
     max-width: 1375px;
@@ -27,6 +37,7 @@
     backkground-color: #ffe45e;
     box-shadow: 0 3px 49px rgba(0, 0, 0, 0.38);
   }
+
   .space {
     @apply my-9;
   }
@@ -103,20 +114,14 @@
     display: inline-block;
     top: 0;
   }
-  @media (max-width: 375px) {
-    .wrapper {
-      padding: 0;
-    }
-  }
-  @media (max-width: 425px) {
-  }
-  @media (max-width: 320px) {
-    .wrapper {
-      @apply px-4;
-    }
-  }
 
   @media screen and (min-device-width: 320px) and (max-device-width: 600px) {
+    .why_mint__border {
+      left: 0.25rem !important;
+    }
+    .why_mint__border::before {
+      left: -10px;
+    }
     .roadmap-1 {
       right: -2px;
       top: 50px;
@@ -145,7 +150,7 @@
 
     .roadmap-3 {
       right: 0px;
-      top: 212px;
+      top: 220px;
       width: 35% !important;
     }
     .roadmap-3 h2 {
@@ -160,6 +165,27 @@
     .roadmap-3 {
       right: 0px;
       top: 220px !important;
+      width: 35% !important;
+    }
+  }
+
+  @media screen and (min-device-width: 325px) and (max-device-width: 424px) {
+    .roadmap-2 {
+      top: 110px !important;
+    }
+    .roadmap-3 {
+      right: 0px;
+      top: 240px !important;
+      width: 35% !important;
+    }
+  }
+  @media screen and (min-device-width: 325px) and (max-device-width: 424px) {
+    .roadmap-2 {
+      top: 30% !important;
+    }
+    .roadmap-3 {
+      right: 0px;
+      top: 65% !important;
       width: 35% !important;
     }
   }
